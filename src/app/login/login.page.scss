@@ -1,0 +1,93 @@
+.page-login{
+    --background: #1fd887;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.item-login {
+    margin-bottom: 10px; 
+}
+
+.icon-login {
+    margin-right: 10px !important;
+}
+
+.input-login {
+    margin-right: 15px;
+}
+
+.titulo-login {
+    margin-bottom: 50px;
+}
+
+.recuperar-senha{
+    font-size: 20pt;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 10pt;
+    display: block;
+    text-align: center;
+    color: #6ad5b9;
+}
+
+.botao-entrar{
+    margin-top: 30px;
+    color: white;
+}
+
+.label-ajuda{
+    margin-top: 40px;
+    text-align: center;
+}
+
+ion-card-header {
+    padding: 5px;    
+}
+
+.titulo-login{
+   
+}
+
+.botao-entrar-2{
+    color: white;
+    --box-shadow: none;
+    width: 100%;
+}
+
+.botao-entrar {
+    --background-activated: #1fd887;
+    --background-focused: #35dc93;
+    --border-color: #1fd887;
+    --border-radius: 8px;
+    --border-style: solid;
+    --border-width: 8px;
+    --box-shadow: 10px 10px;
+    --color: #ffffff;
+    --color-activated: #ffffff;
+    --color-focused: #ffffff;
+    --opacity: 1;
+    --padding-bottom: 4px;
+    --padding-end: 4px;
+    --padding-start: 4px;
+    --padding-top: 4px;
+    --ripple-color: #1e1e1e;
+    --transition: background-color 15ms linear;
+}
+
+.form-login{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    height: 65%;
+}

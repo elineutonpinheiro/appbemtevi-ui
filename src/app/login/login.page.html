@@ -1,0 +1,74 @@
+<ion-content class="page-login">
+    <!-- Logo -->  
+    <div class="logo">
+      <img src="assets\image\LogoNew.png" class="img-logo" />
+    </div>
+
+    <ion-card class="form-login" type="md" >
+
+      <ion-card-header style="text-align: center" class="titulo-login">
+          <ion-card-title >Login</ion-card-title>
+      </ion-card-header>
+
+      <!-- Input E-mail -->
+      <ion-item class="item-login">
+        <ion-icon name="person" class="icon-login"></ion-icon>
+        <ion-input type="email" [(ngModel)]="email" name="email" class="input-login"></ion-input>
+      </ion-item>
+  
+      <!-- Input Senha -->
+      <ion-item>
+        <ion-icon name="lock" class="icon-login"></ion-icon>
+        <ion-input type="password" [(ngModel)]="senha" name="senha" class="input-login"></ion-input>
+      </ion-item>
+
+      <!-- Label recuperar senha  -->
+      <ion-label (click)="recuperarSenha()" class="recuperar-senha">Esqueci a senha!</ion-label>
+
+      <!-- Button Entrar  -->
+      <ion-button expand="block" class="botao-entrar-2">Entrar</ion-button>
+      
+
+      <!-- Label Ajuda  -->
+      <!-- <div class="label-ajuda">
+          <ion-label (click)="ajuda()">Dificuldades no acesso? <strong>Clique Aqui!</strong></ion-label>
+      </div> -->
+
+    </ion-card>
+
+      
+
+</ion-content>
+
+
+ 
+  <!-- 
+  <form>
+
+    
+<ion-button mode="ios" expand="block" (click)="entrar()" class="botao-entrar">Entrar</ion-button>
+
+
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+    </ion-item>
+
+    
+    <ion-item >
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha" name="senha"></ion-input>
+    </ion-item>
+
+   
+    <ion-label (click)="recuperarSenha()" class="recuperar-senha">Esqueci a senha?</ion-label>
+
+    
+    <ion-button mode="ios" expand="full" (click)="entrar()" class="botao-entrar">Entrar</ion-button>
+
+     Label Ajuda  
+    <div class="label-ajuda">
+      <ion-label (click)="ajuda()">Estou com dificuldade no acesso!</ion-label>
+    </div>
+
+  </form> -->

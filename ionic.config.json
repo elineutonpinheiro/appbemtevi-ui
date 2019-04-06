@@ -1,5 +1,7 @@
 {
   "name": "appbemtevi",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
