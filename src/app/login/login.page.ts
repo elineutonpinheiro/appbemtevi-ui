@@ -25,12 +25,12 @@ export class LoginPage {
   entrar() {
 
     if (this.email === 'eli@gmail.com' && this.senha === 'eli') {
-      this.router.navigate(['home']);
+      this.router.navigateByUrl('/home');
     } else {
-      this.router.navigate(['home']);
-       this.acessoIncorreto();
-       console.log(this.email);
-       console.log(this.senha);
+      this.router.navigateByUrl('/bemtevi/tabs/home');
+       //this.acessoIncorreto();
+       //console.log(this.email);
+       //console.log(this.senha);
     }
   }
 

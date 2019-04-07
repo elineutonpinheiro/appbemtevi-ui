@@ -1,5 +1,5 @@
 .page-login{
-    --background: #1fd887;
+    --background: #3a3ec1;
 }
 
 .logo{
@@ -49,36 +49,6 @@
 
 ion-card-header {
     padding: 5px;    
-}
-
-.titulo-login{
-   
-}
-
-.botao-entrar-2{
-    color: white;
-    --box-shadow: none;
-    width: 100%;
-}
-
-.botao-entrar {
-    --background-activated: #1fd887;
-    --background-focused: #35dc93;
-    --border-color: #1fd887;
-    --border-radius: 8px;
-    --border-style: solid;
-    --border-width: 8px;
-    --box-shadow: 10px 10px;
-    --color: #ffffff;
-    --color-activated: #ffffff;
-    --color-focused: #ffffff;
-    --opacity: 1;
-    --padding-bottom: 4px;
-    --padding-end: 4px;
-    --padding-start: 4px;
-    --padding-top: 4px;
-    --ripple-color: #1e1e1e;
-    --transition: background-color 15ms linear;
 }
 
 .form-login{
