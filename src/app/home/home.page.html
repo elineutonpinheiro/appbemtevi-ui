@@ -1,21 +1,58 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Escola Vovó Francisca</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-    <div id="preview">
-      <ion-img src="assets\image\imgHome.png"></ion-img>
-      <div class = "infopreview">
-          <p id="nomeAluno"><strong>Eduardo Silva</strong></p>
-          <p id="nomeTurma">Infantil II</p>
-      </div>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="11">bemtevi</ion-col>
+      <ion-col size="1">
+          <ion-icon name="notifications"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="preview">
+    <ion-img src="assets\image\imgHome.png" class="imgHeader"></ion-img>
+    <!-- Transformar em componente
+      Se Responsável: Aluno e Turma
+      Se Profissional: Turma, Sala -->
+    <div class="infopreview">
+      <p id="nomeAluno"><strong>Eduardo Silva</strong></p>
+      <p id="nomeTurma">Infantil II</p>
     </div>
-    
-    <ion-fab horizontal="end" slot="fixed" class="fab-button">
-      <ion-fab-button>
+  </div>
+
+  <div class="fab-button">
+    <ion-fab horizontal="end" slot="fixed">
+      <ion-fab-button color="secondary">
         <ion-icon mode="ios" name="more"></ion-icon>
       </ion-fab-button>
     </ion-fab>
+  </div>
+
+  <div class="titulo-resumo-diario">
+    <ion-label>Resumo Diário</ion-label>
+    <div class="card-resumo-diario">
+      <ion-card>
+          <ion-card-header style="background-color: #3a3ec1">
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              <ion-card-title>Card Title</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Keep close to Nature's heart... and break clear away, once in awhile,
+              and climb a mountain or spend a week in the woods. Wash your spirit clean.
+            </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+  <div class="titulo-atividades-recentes">
+      <ion-label>Resumo Diário</ion-label>
+      <div class="card-atividades-recentes">
+        <ion-card>
+            <ion-item href="#" class="activated">
+                <ion-icon name="wifi" slot="start"></ion-icon>
+                <ion-label>Card Link Item 1 .activated</ion-label>
+              </ion-item>
+        </ion-card>
+      </div>
+    </div>
+
 </ion-content>

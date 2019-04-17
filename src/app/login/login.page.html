@@ -1,38 +1,40 @@
 <ion-content class="page-login">
     <!-- Logo -->  
     <div class="logo">
-      <img src="assets\image\LogoNew.png" class="img-logo" />
+      <img src="assets\image\Logo.png" class="img-logo" />
     </div>
 
     <ion-card class="form-login" type="md" >
 
-      <ion-card-header style="text-align: center" class="titulo-login">
-          <ion-card-title >Login</ion-card-title>
+      <ion-card-header style="text-align: left">
+          <ion-card-title class="titulo-login">Login</ion-card-title>
       </ion-card-header>
 
       <!-- Input E-mail -->
-      <ion-item class="item-login">
-          <ion-label position="stacked">E-mail</ion-label>
+      <ion-item class="item-native">
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-icon name="mail" mode="ios"  slot="end"></ion-icon>
         <ion-input type="email" [(ngModel)]="email" name="email" class="input-login"></ion-input>
       </ion-item>
   
       <!-- Input Senha -->
       <ion-item>
-        <ion-label position="stacked">Senha</ion-label>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-icon name="lock" mode="ios" slot="end"></ion-icon>
         <ion-input type="password" [(ngModel)]="senha" name="senha" class="input-login"></ion-input>
       </ion-item>
 
       <!-- Label recuperar senha  -->
-      <ion-label (click)="recuperarSenha()" class="recuperar-senha">Esqueci a senha!</ion-label>
-
+      <!--<ion-label (click)="recuperarSenha()" class="recuperar-senha"><strong>Esqueci a senha</strong></ion-label> -->
       <!-- Button Entrar  -->
-      <ion-button expand="block" class="botao-entrar-2" (click)="entrar()">Entrar</ion-button>
-      
+      <div>
+        <ion-button class="botao-entrar" (click)="entrar()" color="secondary"><strong style="text-transform: capitalize">Entrar</strong></ion-button>
+      </div>
 
       <!-- Label Ajuda  -->
-      <!-- <div class="label-ajuda">
-          <ion-label (click)="ajuda()">Dificuldades no acesso? <strong>Clique Aqui!</strong></ion-label>
-      </div> -->
+      <div class="label-ajuda">
+          <ion-label (click)="ajuda()">Esqueceu a senha? <strong style="color:#3a3ec1">Clique Aqui!</strong></ion-label>
+      </div> 
 
     </ion-card>
 
