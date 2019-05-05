@@ -1,76 +1,42 @@
 <ion-content class="page-login">
-    <!-- Logo -->  
-    <div class="logo">
-      <img src="assets\image\Logo.png" class="img-logo" />
-    </div>
 
-    <ion-card class="form-login" type="md" >
+  <div class="div-logo" [hidden]="keyboard.isVisible">
+    <!-- Logo -->
+    <img src="assets\image\Logo.png" class="img-logo" />
+  </div>
 
-      <ion-card-header style="text-align: left">
-          <ion-card-title class="titulo-login">Login</ion-card-title>
+  <div class="div-card-login">
+    <ion-card class="form-login" type="md">
+      <ion-card-header class="form-login-header">
+        <ion-card-title class="titulo-login">Login</ion-card-title>
       </ion-card-header>
 
       <!-- Input E-mail -->
-      <ion-item class="item-native">
-          <ion-label position="floating">E-mail</ion-label>
-          <ion-icon name="mail" mode="ios"  slot="end"></ion-icon>
+      <ion-item class="item-login">
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-icon name="mail" mode="ios" slot="end"></ion-icon>
         <ion-input type="email" [(ngModel)]="email" name="email" class="input-login"></ion-input>
       </ion-item>
-  
+
       <!-- Input Senha -->
-      <ion-item>
+      <ion-item class="item-login">
         <ion-label position="floating">Senha</ion-label>
         <ion-icon name="lock" mode="ios" slot="end"></ion-icon>
         <ion-input type="password" [(ngModel)]="senha" name="senha" class="input-login"></ion-input>
       </ion-item>
 
-      <!-- Label recuperar senha  -->
-      <!--<ion-label (click)="recuperarSenha()" class="recuperar-senha"><strong>Esqueci a senha</strong></ion-label> -->
       <!-- Button Entrar  -->
-      <div>
-        <ion-button class="botao-entrar" (click)="entrar()" color="secondary"><strong style="text-transform: capitalize">Entrar</strong></ion-button>
-      </div>
+
+      <ion-button class="botao-entrar" (click)="entrar()" color="secondary">
+        <strong>Entrar</strong>
+      </ion-button>
 
       <!-- Label Ajuda  -->
       <div class="label-ajuda">
-          <ion-label (click)="ajuda()">Esqueceu a senha? <strong style="color:#3a3ec1">Clique Aqui!</strong></ion-label>
-      </div> 
+        <ion-label (click)="ajuda()">Esqueceu a senha? <strong style="color:#3a3ec1">Clique Aqui!</strong></ion-label>
+      </div>
 
     </ion-card>
-
-      
+  </div>
 
 </ion-content>
-
-
- 
-  <!-- 
-  <form>
-
-    
-<ion-button mode="ios" expand="block" (click)="entrar()" class="botao-entrar">Entrar</ion-button>
-
-
-    <ion-item>
-      <ion-label position="floating">E-mail</ion-label>
-      <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
-    </ion-item>
-
-    
-    <ion-item >
-      <ion-label position="floating">Senha</ion-label>
-      <ion-input type="password" [(ngModel)]="senha" name="senha"></ion-input>
-    </ion-item>
-
-   
-    <ion-label (click)="recuperarSenha()" class="recuperar-senha">Esqueci a senha?</ion-label>
-
-    
-    <ion-button mode="ios" expand="full" (click)="entrar()" class="botao-entrar">Entrar</ion-button>
-
-     Label Ajuda  
-    <div class="label-ajuda">
-      <ion-label (click)="ajuda()">Estou com dificuldade no acesso!</ion-label>
-    </div>
-
-  </form> -->

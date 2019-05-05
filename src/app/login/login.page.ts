@@ -1,3 +1,4 @@
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
@@ -12,7 +13,7 @@ export class LoginPage {
   private senha = "";
   private email = "";
 
-  constructor(private router: Router, public toastController: ToastController) {}
+  constructor(private router: Router, public toastController: ToastController, public keyboard: Keyboard) {}
 
   async acessoIncorreto() {
     const toast = await this.toastController.create({
@@ -25,7 +26,7 @@ export class LoginPage {
   entrar() {
 
     if (this.email === 'eli@gmail.com' && this.senha === 'eli') {
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/bemtevi/tabs/home');
     } else {
       this.router.navigateByUrl('/bemtevi/tabs/home');
        //this.acessoIncorreto();
