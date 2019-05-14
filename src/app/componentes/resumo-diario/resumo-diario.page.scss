@@ -1,0 +1,48 @@
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    //margin-left: 12px;
+    margin-right: 0;
+    //padding-top: 3px;
+    .card {
+      //text-align: center;
+      //flex: 0 0 auto;
+      //width: 110px !important;
+      //height: 100px !important;
+      //background-color: #fcfcfc;
+      //color: #ea3838;
+      //margin-left: 8px !important;
+      //margin-top: 10px !important;
+      //margin-right: 20px !important;
+      //box-shadow: 0px 4px 10px rgba(0,0,0,.09);
+      
+      //.card-content {
+      //  padding: 15px 20px 15px 20px;
+      //}
+    }
+}
+
+.tipo-sanguineo {
+    font-size: 1.5625em;
+    font-weight: 700;
+}
+  
+  .status-tipo-sanguineo {
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 1.25em;
+  }
+  
+  .tipoSanguineoUsurario {
+    background-color: #ea3838;
+    color: #fcfcfc;
+  }
+  
+  .separador-blocos{
+    background-color: grey;
+  }

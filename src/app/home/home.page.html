@@ -1,58 +1,110 @@
-<ion-content>
+<div class="barra-header">
+  <ion-row>
+    <ion-col size="10" style="text-align: left">BEMTEVI</ion-col>
+    <ion-col size="2" style="text-align: right">
+      <ion-icon name="notifications-outline" size="large"></ion-icon>
+    </ion-col>
+  </ion-row>
+</div>
 
-  <ion-grid fixed>
+<ion-content no-padding>
+
+  <ion-grid no-padding>
+    <ion-row no-padding>
+      <ion-row>
+        <ion-col size="12" ion-no-padding style="padding: 0px;">
+          <div class="img-home" style="width: 1024px; height: 200px; background: darkblue">
+            
+          </div>
+          <!-- Transformar em componente
+            Se Responsável: Aluno e Turma
+            Se Profissional: Turma, Sala -->
+          <div class="info" style="margin-top: -65px">
+            <p id="nomeAluno"><strong>Eduardo Silva</strong></p>
+            <p id="nomeTurma">Infantil II</p>
+          </div>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-row>
+
+    <div class="opcoes-user">
+      <ion-fab horizontal="end" slot="fixed">
+        <ion-fab-button color="secondary">
+          <ion-icon mode="ios" name="more"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+
     <ion-row>
-      <ion-col size="11">bemtevi</ion-col>
-      <ion-col size="1">
-          <ion-icon name="notifications"></ion-icon>
+      <ion-col size="12" style="padding: 10px">
+        <app-resumo-diario></app-resumo-diario>
       </ion-col>
     </ion-row>
+
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-row style="padding-right: 10px; padding-left: 10px">
+          <ion-label class="titlulo-sessao" style="color: #0D1E3F">Atividades recentes</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-card class="card-atividades-recentes">
+            <ion-item href="#" class="activated">
+              <ion-icon name="wifi" slot="start"></ion-icon>
+              <ion-label>Card Link Item 1 .activated</ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
   </ion-grid>
 
-  <div class="preview">
-    <ion-img src="assets\image\imgHome.png" class="imgHeader"></ion-img>
-    <!-- Transformar em componente
-      Se Responsável: Aluno e Turma
-      Se Profissional: Turma, Sala -->
-    <div class="infopreview">
-      <p id="nomeAluno"><strong>Eduardo Silva</strong></p>
-      <p id="nomeTurma">Infantil II</p>
-    </div>
-  </div>
 
-  <div class="fab-button">
-    <ion-fab horizontal="end" slot="fixed">
-      <ion-fab-button color="secondary">
-        <ion-icon mode="ios" name="more"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-  </div>
-
-  <div class="titulo-resumo-diario">
-    <ion-label>Resumo Diário</ion-label>
-    <div class="card-resumo-diario">
-      <ion-card>
-          <ion-card-header style="background-color: #3a3ec1">
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-              <ion-card-title>Card Title</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              Keep close to Nature's heart... and break clear away, once in awhile,
-              and climb a mountain or spend a week in the woods. Wash your spirit clean.
-            </ion-card-content>
-      </ion-card>
-    </div>
-  </div>
-  <div class="titulo-atividades-recentes">
-      <ion-label>Resumo Diário</ion-label>
-      <div class="card-atividades-recentes">
-        <ion-card>
-            <ion-item href="#" class="activated">
-                <ion-icon name="wifi" slot="start"></ion-icon>
-                <ion-label>Card Link Item 1 .activated</ion-label>
-              </ion-item>
-        </ion-card>
-      </div>
-    </div>
 
 </ion-content>
+
+
+<!-- <ion-row>
+    <ion-col size="12">
+
+      <ion-row style="padding-right: 10px; padding-left: 10px">
+        <ion-label class="titlulo-sessao" style="color: #0D1E3F">Resumo Diário</ion-label>
+      </ion-row>
+
+      <ion-row style="padding-right: 10px; padding-left: 10px;">
+        <ion-card class="card-resumo-diario">
+          <ion-card-header style="background-color: #3a3ec1; padding-left: 10px">
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Alimentação sdsd</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear.
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card class="card-resumo-diario">
+          <ion-card-header style="background-color: #3a3ec1">
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Alimentação sdsd</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear.
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card class="card-resumo-diario">
+          <ion-card-header style="background-color: #3a3ec1">
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Alimentação sdsd</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear.
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+
+    </ion-col>
+  </ion-row> -->
