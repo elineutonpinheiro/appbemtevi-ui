@@ -1,3 +1,4 @@
+import { AtividadesRecentesPage } from './../componentes/atividades-recentes/atividades-recentes.page';
 import { ResumoDiarioPage } from './../componentes/resumo-diario/resumo-diario.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -21,6 +22,6 @@ import { HomePage } from './home.page';
   ],
   //Para criar um componente a ser usuado em varios locais CRIAR um componente.module.ts, 
   //DECLARAR o componente e IMPORTA no arquivo.modulo.ts onde o componente será usado.
-  declarations: [HomePage, ResumoDiarioPage]
+  declarations: [HomePage, ResumoDiarioPage, AtividadesRecentesPage]
 })
 export class HomePageModule {}
